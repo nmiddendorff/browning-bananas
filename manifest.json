@@ -11,12 +11,11 @@
       "run_at": "document_end"
     }
   ],
-  "browser_action": {
-    "default_icon": {
-      "16": "./img/icon_160.png",
-      "32": "./img/icon_160.png",
-      "48": "./img/icon_160.png"
-    }
+  "icons": {
+    "16": "./img/icon_160.png",
+    "32": "./img/icon_160.png",
+    "48": "./img/icon_160.png",
+    "128": "./img/icon_160.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
