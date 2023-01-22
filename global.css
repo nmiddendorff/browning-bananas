@@ -1,0 +1,10 @@
+[data-created-date-time][data-before]::before {
+  position: absolute;
+  content: attr(data-before);
+  color: whitesmoke;
+  padding: 6px;
+  opacity: 0.8;
+  border-radius: 4px;
+  font-family: monospace;
+  background: #3f3f45;
+}
