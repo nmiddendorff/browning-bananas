@@ -30,22 +30,30 @@ setInterval(function () {
         const percentage = elapsedTime / totalTime;
 
         const colorMap = {
-          0: "#EDD648",
-          0.1: "#D8C343",
-          0.2: "#C4AF3F",
-          0.3: "#AF9C3A",
-          0.4: "#9B8836",
-          0.5: "#867531",
-          0.6: "#72612D",
-          0.7: "#5D4E28",
-          0.8: "#493A24",
-          0.9: "#34271F",
-          1: "#19130F",
+          0: { background: "#EDD648", text: "black" },
+          0.1: { background: "#D8C343", text: "black" },
+          0.2: { background: "#C4AF3F", text: "black" },
+          0.3: { background: "#AF9C3A", text: "whitesmoke" },
+          0.4: { background: "#9B8836", text: "whitesmoke" },
+          0.5: { background: "#867531", text: "whitesmoke" },
+          0.6: { background: "#72612D", text: "whitesmoke" },
+          0.7: { background: "#5D4E28", text: "whitesmoke" },
+          0.8: { background: "#493A24", text: "whitesmoke" },
+          0.9: { background: "#34271F", text: "whitesmoke" },
+          1: { background: "#19130F", text: "whitesmoke" },
         };
 
         Object.keys(colorMap).forEach((key) => {
           if (percentage >= key) {
-            element.style.backgroundColor = colorMap[key];
+            element.style.setProperty(
+              "--dynamicBananaColor",
+              `${colorMap[key].background}`
+            );
+
+            element.style.setProperty(
+              "--dynamicBananaText",
+              `${colorMap[key].text}`
+            );
           }
         });
 

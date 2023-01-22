@@ -1,10 +1,11 @@
 [data-created-date-time][data-before]::before {
   position: absolute;
   content: attr(data-before);
-  color: whitesmoke;
+  color: var(--dynamicBananaText, #3f3f45);;
   padding: 6px;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 4px;
   font-family: monospace;
-  background: #3f3f45;
+  background-color: var(--dynamicBananaColor, #3f3f45);
+  z-index: 2;
 }
