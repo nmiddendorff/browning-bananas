@@ -1,6 +1,6 @@
 {
   "name": "Browning Bananas Extension",
-  "version": "0.1",
+  "version": "0.2",
   "description": "The extension that helps you visualize when your component was server-side rendered",
   "permissions": ["activeTab"],
   "content_scripts": [

@@ -14,7 +14,7 @@ This browser extension is a simple way to visualize when DOM elements were creat
 
 example:
 ```jsx
-<div data-ttl="60" data-created-date-time="2023-01-22T16:48:47.674Z"></div>
+<div data-ttl="60" data-created-date-time={new Date().toISOString()}></div>
 ```
 
 ## Screenshots
