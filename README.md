@@ -2,7 +2,11 @@
 
 This browser extension is a simple way to visualize when DOM elements were created by a server.
 
-## Installation
+## Installation Options
+### (1) Chrome web Store
+1. Add [Browning Bananas Extension](https://chrome.google.com/webstore/detail/browning-bananas-extensio/pgoddcbpnbdmoaokpmadjdomleldjjki)
+
+### (2) Manual
 1. Clone this repo
 2. chrome://extensions/
 3. Click Load unpacked and select the browning-bananas directory
